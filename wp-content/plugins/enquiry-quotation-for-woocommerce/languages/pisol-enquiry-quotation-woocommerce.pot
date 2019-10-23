@@ -1,0 +1,58 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"POT-Creation-Date: 2019-08-06 04:46+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: public/class-pisol-form.php:42
+msgid "Enquiry submitted"
+msgstr ""
+
+#: public/partials/pisol-eqw-shortcode.php:39
+msgid "Name"
+msgstr ""
+
+#: public/partials/pisol-eqw-shortcode.php:40
+msgid "Email"
+msgstr ""
+
+#: public/partials/pisol-eqw-shortcode.php:41
+msgid "Phone"
+msgstr ""
+
+#: public/partials/pisol-eqw-shortcode.php:42
+msgid "Subject"
+msgstr ""
+
+#: public/partials/pisol-eqw-shortcode.php:43
+msgid "Message"
+msgstr ""
+
+#: public/partials/pisol-eqw-shortcode.php:44
+msgid "Submit Enquiry"
+msgstr ""
+
+#. Name of the plugin
+msgid "Enquiry Quotation for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Product enquiry and quotation plugin for WooCommerce that can save enquiry "
+"and email the enquiry as well"
+msgstr ""
+
+#. URI of the plugin
+msgid "piwebsolution.com"
+msgstr ""
+
+#. Author of the plugin
+msgid "PI Websolution"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "piwebsolution.com/enquiry-quotation-woocommerce"
+msgstr ""

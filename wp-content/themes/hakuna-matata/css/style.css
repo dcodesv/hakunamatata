@@ -1,0 +1,1149 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    left: 0;
+    background: #fff;
+    z-index: 10000;
+    box-shadow: 0 20px 35px -15px rgba(30,60,80,0.2);
+}
+.nav-header{
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 5px 30px;
+    background: #fff;
+}
+.menu-mobile, .menu-mobile-button{
+    display: none;
+}
+
+.nav-header img {
+    margin: 0px;
+    height: 80px;
+    margin: 0 auto 0 0;
+}
+.nav-header .nav-menu .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nav-header .nav-menu .menu .menu-item a{
+    color: #000;
+    font-weight: 600;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    position: relative;
+    transition: 0.3s ease;
+}
+.nav-header .nav-menu .menu .menu-item:first-child a{
+    color: #4A9C74;
+}
+.nav-header .nav-menu .menu .menu-item:first-child a:after{
+    position: absolute;
+    top:0px;
+    left: 25px;
+    content: "";
+    border-bottom: 2px solid #4A9C74;
+    width: 25%;
+    height: 85%;
+    transition: 0.3s ease;
+    opacity: 1;
+}
+.nav-header .nav-menu .menu .menu-item:hover > a{
+    color: #4A9C74;
+}
+.nav-header .nav-menu .menu .menu-item a:after{
+    position: absolute;
+    top:0px;
+    left: 25px;
+    content: "";
+    border-bottom: 2px solid #4A9C74;
+    width: 0;
+    height: 85%;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+.nav-header .nav-menu .menu .menu-item a:hover:after{
+    opacity: 1;
+    width: 25%;
+}
+
+.nav-social{
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
+}
+
+.nav-social a{
+    display: flex;
+    justify-content: center;align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px 20px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.nav-social a:hover{
+    color: #4A9C74;
+}
+
+
+
+
+/*Estilos Banner*/
+.contenedor-banner{ 
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    text-align: center;
+    background: url(../img/lechuga.jpg) no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+/*Para posts*/
+.contenedor-banner.post{
+    height: 500px;
+}
+/*Fin*/
+
+.contenedor-banner:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:#000000af;
+    position:absolute;
+}
+.contenedor-banner-inner{
+    top: 35%;
+    position: relative;
+    width: 85%;
+    max-width: 1500px;
+    margin: 0 50px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 1;
+}
+.contenedor-banner-inner .text-banner{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*Para posts*/
+.contenedor-banner.post .contenedor-banner-inner .text-banner, 
+.contenedor-banner.post .contenedor-banner-inner .text-banner .t-portada{
+    align-items: center;
+    width: 100%;
+    font-size: 4rem;
+}
+.contenedor-banner.post .contenedor-banner-inner{
+    top: 40%;
+}
+/*Fin*/
+
+.t-portada {
+    font-size: 6.5rem;
+    font-family: "Marck Script";
+    font-weight: 400;
+    color: white;
+    line-height: 8rem;
+}
+.t-entrada {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+#btn-productos{
+    color:#fff !important;
+    background: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    border:1px solid #fff;
+    transition: 0.3s ease;
+}
+#btn-productos:hover{
+    background: #4A9C74;
+    border-color: #4A9C74;
+    box-shadow: 0 15px 20px -5px #1A261ecf;
+    color: #fff;
+    transition: 0.2s ease;    
+}
+
+.contenedor-banner-inner .video-banner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 260px;
+    padding: 15px 5px;
+}
+.contenedor-banner-inner .video-banner .play-video{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+    border: none;
+    opacity: 0.7;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.contenedor-banner-inner .video-banner .play-video i{
+    margin-right: 50px;
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+}
+.contenedor-banner-inner .video-banner .play-video i:after{
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 2px;
+    top: calc(50% - 1px);
+    left: 90%;
+    background: #fff;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+.contenedor-banner-inner .video-banner .play-video span{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+.contenedor-banner-inner .video-banner .play-video:hover{
+    opacity: 1;
+    margin-bottom: 5px;
+}
+.contenedor-banner-inner .video-banner .play-video:hover > i, .contenedor-banner-inner .video-banner .play-video:hover > span{
+    text-shadow: 0 5px 15px #000;
+}
+.contenedor-banner-inner .video-banner .play-video:hover > i:after{
+    width: 0;
+}
+
+/*COTIZACIÓN*/
+.contenedor-cotizaciones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 50px 50px;
+    margin: -50px auto 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.contenedor-cotizaciones h1{
+    color: #fff;
+    font-family: 'Marck Script';
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.contenedor-cotizaciones .opciones-cotizaciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contenedor-cotizaciones .opciones-cotizaciones form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-cotizaciones .opciones-cotizaciones form .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-right: 30px;
+}.contenedor-cotizaciones .opciones-cotizaciones form .col:nth-last-child(1){
+    margin: 0;
+}
+.contenedor-cotizaciones .opciones-cotizaciones form .col span{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+.contenedor-cotizaciones .opciones-cotizaciones form .col select, .contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col{
+    width: 400px;
+    padding: 10px 10px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    background: none;
+    border:1px solid #fff;
+    color: #fff;
+    font-size: 1.15rem;
+}.contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col{
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}.contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col input{
+    width: 60px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    background: none;
+    border:none;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.15rem;
+}.contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col input:focus{
+    outline: none;
+}
+.contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col span{
+    width: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.contenedor-cotizaciones .opciones-cotizaciones form .col select option{
+    background: #000;
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 0.9rem;
+}
+.contenedor-cotizaciones .opciones-cotizaciones form .col #btn-cotizacion, 
+.contenedor-cotizaciones .opciones-cotizaciones form .col #btn-cotizacion-mas{
+    margin-top: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border:none;
+    padding: 15px 20px;
+    font-size: 0.8rem;
+}.contenedor-cotizaciones .opciones-cotizaciones form .col #btn-cotizacion-mas{
+    background: #000;
+    border:1px solid #fff;
+    color: #fff;
+    opacity: 0.7;
+}
+.contenedor-cotizaciones .opciones-cotizaciones form .col #btn-cotizacion:hover{
+    background: #fff;
+    color: #000;
+}.contenedor-cotizaciones .opciones-cotizaciones form .col #btn-cotizacion-mas:hover{
+    background: #4A9C74;
+    border-color: #4A9C74;
+    opacity: 1;
+}
+
+
+/*NUESTROS SOCIOS*/
+.nts-scs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px 0;
+    background: #fff;
+}
+.nts-logos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+.nts-logos-item{
+    filter: grayscale(100%);
+    opacity: 0.75;
+    margin: 0 50px;
+    transition: 0.2s ease;
+}
+.nts-logos-item:nth-child(1){
+    height: 40px;
+}.nts-logos-item:nth-child(2){
+    height: 75px;
+}.nts-logos-item:nth-child(3){
+    height: 70px;
+}
+.nts-logos-item:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+/* SECCION DE CARTAS DE PRODUCTOS*/
+.sec-productos {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #F2F3F5;
+    padding-top: 75px;
+    padding-bottom: 0px;
+    z-index: 1000;
+}
+.sec-productos .card{
+    margin: 0 50px;
+    width: 250px;
+    height: 225px;
+}
+.card-image.image-prod-frescos{
+    top:35%;
+    width: 90%;
+}
+.card-image.image-prod-naturales{
+    top: 20%;
+    width: 80%;
+    transform:rotate(45deg)
+}
+.sec-productos .card:hover > .card-image.image-prod-naturales{
+    top:30%;
+}
+.sec-productos .card:hover > .card-image.image-prod-frescos{
+    top:45%;
+}
+
+/*END SECTIONS*/
+.end-section{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -20px;
+}
+.end-section > img{
+    height: 150px;
+}
+.end-section .relleno{
+    width: 100%;
+    background: #F2F3F5;
+}
+
+/*ACERCA DE NOSOTROS*/
+.section-about{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 50px 50px 0;
+}
+.about-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.about-cont img{
+    width: 500px;
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.4);
+    margin-right: 50px;
+}
+.about-cont-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about-cont-inner p{
+    width: 700px;
+    max-width: 1500px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.about-cont-inner h1{
+    color: #000;
+    font-family: 'Marck Script';
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.about-cont-inner .btn{
+    padding: 15px 50px;
+    margin: 0px auto;
+    margin-top: 25px;
+    background: #4A9C74;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+}
+
+.mision-vision{
+    width: 80%;
+    max-width: 1500px;
+    display: flex;
+    margin-top: 75px;
+}
+.mision-vision .item .cont-title{
+    align-items: flex-start;
+    position: relative;
+    padding: 0;
+    padding-left: 20px;
+}
+.mision-vision .item .cont-title:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 50%;
+    width: 20px;
+    border-left:3px solid #4A4C4F;
+}
+.mision-vision .item .cont-title .pre-title{
+    font-size: 1rem;
+}
+.mision-vision .item .cont-title .title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.mision-vision .item{
+    width: 100%;
+    margin: 15px;
+}
+.mision-vision .item .text{
+    width: 100%;
+    margin-top: 20px;
+    text-align: justify;
+}
+.mision-vision .item .list{
+    list-style: none;
+}
+.mision-vision .item .list li i{
+    font-size: 0.7rem;
+    margin-right: 5px;
+    color: #7a7a7a;
+}
+
+
+
+#nt-productos{
+    width: 100%;
+    background: #000000af;
+    padding:30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+#nt-productos:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/bgfrutas.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+#nt-productos .cont-title .pre-title{
+    color:#fff;
+}
+#nt-productos .cont-title .title{
+    color: #fff;
+}
+.horizontal{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 25px 50px;
+}
+.nt-prod-f{
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin: auto;
+    border-radius: 10px;
+    background: #fff;
+    margin:15px;
+    overflow: hidden;
+  }
+  .nt-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }  
+
+  .texto {
+    text-align: center;
+    margin:20px 0;
+  }
+#pro-txt {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: #384144;
+    font-family: 'Laila';
+}
+#pro-txt-p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 900;
+    color: #000;
+}
+#contact:hover{
+    color: rgb(10, 15, 11);
+    background: rgba(10, 184, 10, 0.7);
+    
+}
+/*Fomulario*/
+.contacto {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #F2F1F1;
+    text-align: center;
+    padding: 75px 50px;
+    box-sizing: border-box;
+}
+.contacto h1{
+    color: #000;
+    font-family: 'Marck Script';
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contacto .map-contenedor{
+    width: 700px;
+    position: relative;
+}
+.contacto .map-contenedor .mapa{
+    width: 700px;
+    height: 400px;
+    border: 0;
+}
+.contacto .form-contenedor{
+    width: 500px;
+    margin-right: 50px;
+}
+.contacto .form-contenedor h2{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.contacto .form-contenedor p{
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 30px auto;
+}
+.contacto .form-contenedor form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.contacto .form-contenedor input{
+    align-items: flex-start;
+    width: 80%;
+    border: 1px solid #000;
+    margin-bottom: 0px; 
+    padding: 15px 15px;
+    font-size:0.9rem;
+    color: #000;
+    background: none;
+}
+.contacto input::placeholder, .contacto textarea::placeholder{
+    color: #0000007f;
+}
+.contacto input:hover{
+    transition: 0.2s;
+}
+.contacto input:focus{
+    outline: none;
+}
+#textarea-f{
+    width: 80%;
+    border: 1px solid #000;
+    padding: 15px 15px;
+    font-family: 'Open Sans';
+    font-size:0.9rem;
+    resize: none;
+    background: none;
+    color: #000;
+}
+#textarea-f:focus{
+    outline: none;
+}
+
+#form{
+    letter-spacing: 1pt;
+    color: #384144;  
+}
+
+.contacto #btn-send{
+    border:none;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 15px 40px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+footer{
+    width: 100%;
+    background: #151519;
+}
+.cont-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title-footer{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Marck Script';
+}
+.text-left{
+    color: #fff;
+    margin: 7% 7%;
+    width: 25%;
+    text-align: justify;
+    color: #ffffff7f;
+    font-size: 0.9rem; 
+    line-height: 1.5rem;
+}
+.text-left p, .text-rigth p {
+    padding: 10px 0
+}
+
+.text-center{
+    width: 10%;
+    margin: auto;
+}
+
+.text-center img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.text-rigth{
+    margin: 7% 7%;
+    width: 25%;
+    color: #ffffff7f;
+    font-size: 0.9rem;  
+    line-height: 1.5rem;
+}
+.nav-footer {
+    width: 100%;
+    background: #000;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-footer span {
+    color: #ffffff7f;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-footer .nav-menu-footer .menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.nav-footer .nav-menu-footer .menu li a{
+    padding: 10px 20px;
+    color:#ffffff5f;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-footer .nav-menu-footer .menu li a:hover{
+    color:#fff;
+}
+
+
+
+/*WOOCOMMERCE*/
+.product_title.entry-title{
+    font-size: 3em;
+}
+
+
+/*Content Pages*/
+.content-pages{
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.content-pages p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+.content-pages h2{
+    font-family: "Marck Script";
+    font-size: 2rem;
+    line-height: 3rem;
+    position: relative;
+    margin-bottom: 20px;
+} 
+
+/*Woocommerce Header*/
+.woocommerce-products-header{
+    display:none;
+}
+.woocommerce-breadcrumb{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 50px;
+    padding-top: 150px;
+}.woocommerce-breadcrumb a, .woocommerce-breadcrumb{
+    color: #384144;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}.woocommerce-breadcrumb a{
+    color: #000;
+    font-weight: 600;
+}.woocommerce-breadcrumb a:hover{
+    color: #4A9C74;
+}
+
+
+/*Contenedor del producto*/
+.product-type-simple{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px 50px;
+    max-width: 1200px;
+    background: #F2F3F5;
+    margin: 0 auto;
+}
+
+/*Resumen del producto*/
+.summary.entry-summary{
+    width: 500px;
+}
+
+/*Titulo*/
+.summary.entry-summary .product_title.entry-title{
+    font-size: 2rem;
+    font-family: "Marck Script";
+}
+
+/*Precio*/
+.summary.entry-summary .woocommerce-Price-amount.amount{
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 4rem;
+    margin-top: 25px !important;
+    color: #000;
+}
+
+/*Cantidad*/
+.summary.entry-summary .input-text.qty.text{
+border:2px solid #4A9C74;
+color: #000;
+font-size: 1rem;
+padding: 10px;
+box-sizing: border-box;
+width:60px;
+font-weight: 700;
+margin-top: 15px !important;
+background: none;
+}.summary.entry-summary .input-text.qty.text:focus{
+    outline: none;
+}
+
+/*Boton comprar*/
+.single_add_to_cart_button.button.alt{
+    display: none;
+}
+
+/*Boton de cotizacion*/
+.summary.entry-summary .pi-custom-button{
+    width: fit-content;
+    padding: 15px 20px;
+    background: #4A9C74 !important;
+    border:none;
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    transition: 0.3s ease;
+}.summary.entry-summary .pi-custom-button:hover{
+    background: #000 !important;
+}
+
+/*ver cotizaciones*/
+
+.summary.entry-summary .pisol-view-cart{
+    color: #fff;
+    font-size: 0.9rem;
+    background: #000;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s ease;
+}.summary.entry-summary .pisol-view-cart:hover{
+    background: #4A9C74;
+}
+
+.summary.entry-summary .woocommerce-product-details__short-description{
+    margin: 15px 0;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: #384144;
+}
+
+/*meta product*/
+.product_meta{
+    display: none;
+}
+/*Galeria de producto*/
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    flex-direction: column;
+    margin-right: 50px;
+    background: #fff;
+}
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images img{
+    width: 400px;
+    height: auto;
+}
+
+/*Descripcion*/
+.woocommerce-tabs.wc-tabs-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs{
+    display: none;
+}
+#tab-description{
+    margin-top: 50px;
+}
+#tab-description h2{
+    font-family: "Marck Script";
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+#tab-description p{
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    line-height: 2rem;
+}
+/*Fin*/
+
+/*Productos relacionados*/
+.related.products{
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.related.products > h2{
+    font-family: 'Marck Script';
+    font-size: 2rem;
+}
+.related.products .products.columns-4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.related.products .products.columns-4 li, .related.products .products.columns-4 li a{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.related.products .products.columns-4 li a{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.related.products .products.columns-4 li img{
+    width: 125px !important;
+    height: 125px !important;
+}
+.related.products .products.columns-4 li a{
+    text-decoration: none;
+}
+.related.products .products.columns-4 li h2{
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-break: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+}
+.related.products .products.columns-4 li .woocommerce-Price-amount.amount{
+    margin: auto 0 0 0;
+    display: flex;
+    height: 35px !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+    color:#384144;
+}
+/*Fin*/
+
+#sidebar{
+    display: none;
+}
+.ajax_add_to_cart{
+    display: none !important;
+}
+
+.input-text.qty.text.pi-quantity{
+    padding: 10px 5px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 0.9rem;
+}
+.pi-message{
+    padding: 10px 5px;
+    border:1px solid #000;
+    color: #000;
+    font-size: 0.9rem;
+    resize: none;
+    font-family: 'Open Sans';
+}
+.pi-form-control{
+    color: #000;
+    border:1px solid #0000005f;
+    padding: 20px 20px;
+}
+.pi-btn.pi-btn-primary{
+    background: #4A9C74;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}.pi-btn.pi-btn-primary:hover{
+    background: #000;
+}.woocommerce-message{
+    width: 100%;
+}
+
+/*Cotizacion */
+.product-thumbnail.pi-thumbnail img{
+    width: 75px !important;
+    max-width: 100px !important;
+    height: 75px !important;   
+}
+.woocommerce-cart-form__cart-item .product-name a{
+    color: #384144;
+    font-weight: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail{
+    width: 200px !important;
+    height: 200px !important;
+}
+.wc-block-grid__product-title{
+    color: #4f5053;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.woocommerce-Price-amount.amount{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000;
+}

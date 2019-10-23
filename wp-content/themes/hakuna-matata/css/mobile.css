@@ -1,0 +1,313 @@
+@media only screen and (max-width:1200px){
+/*#### Menu ####*/
+    /*Ocultamos los menus de desktop*/
+    .nav-menu{
+        display: none;
+    }
+    .nav-social{
+        display: none;
+    }
+    /*FIN*/
+
+    /*Estilos menu mobile*/
+    header{
+        background: #fff;
+        height: 75px;
+        padding: 0;
+    }
+    .nav-header{
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 25px;
+    }
+    .menu-mobile.active{
+        left: 0;
+        opacity: 1;
+    }
+    .menu-mobile{
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        left: -100vh;
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .nav-menu-mobile{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-header img{
+        z-index: 1000;
+        height: 65px;
+    }
+    .nav-header .nav-menu-mobile .menu{
+        margin-top: 110px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-menu-mobile .menu .menu-item{
+        padding: 25px 25px;
+        margin-left: 25px;
+    }
+    .nav-social-mobile{
+        display: flex;
+        position: absolute;
+        width: 200px;
+        justify-content: center;
+        left: calc(50% - 100px);
+        top: 90vh;
+    }
+     .menu-mobile-button{
+        width: 45px;
+        height: 40px;
+        background: #4A9C74;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s ease;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    .menu-mobile-button i{
+        font-size:20px;
+        color: #fff;
+    }
+    .menu-mobile-button:hover, .menu-mobile-button.active{
+        background: #000;
+    }       
+/*#### Fin menu ####*/
+
+/*#### Estilos banner ####*/
+    .contenedor-banner{ 
+        height: 100%;
+    }
+
+    /*Para posts*/
+    .contenedor-banner.post{
+        height: 300px;
+    }
+    /*Fin*/
+
+    .contenedor-banner-inner{
+        top: 175px;
+        width: 100%;
+        margin: 0 20px;
+        flex-direction: column;
+    }
+    .contenedor-banner-inner .text-banner{
+        align-items: center;
+    }
+
+/*Para posts*/
+    .contenedor-banner.post .contenedor-banner-inner .text-banner, 
+    .contenedor-banner.post .contenedor-banner-inner .text-banner .t-portada{
+        align-items: center;
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .contenedor-banner.post .contenedor-banner-inner{
+        top: 40%;
+    }
+    /*Fin*/
+
+    .t-portada {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    .t-entrada {
+        font-size: 1.10rem;
+        opacity: 0.6;
+        margin-bottom: 40px;
+    }
+    .contenedor-banner-inner .video-banner{
+        display: none;
+    }
+/*#### fin estilos banner ####*/
+
+/*#### Cotizacion ####*/
+    .contenedor-cotizaciones{
+        padding: 50px 10px;
+    }
+    .contenedor-cotizaciones h1{
+        font-size: 2rem;
+    }
+    .contenedor-cotizaciones .opciones-cotizaciones{
+        flex-direction: column;
+    }
+    .contenedor-cotizaciones .opciones-cotizaciones form{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .contenedor-cotizaciones .opciones-cotizaciones form .col{
+        padding: 10px 0px;
+        margin-right: 0px;
+    }.contenedor-cotizaciones .opciones-cotizaciones form .col:nth-last-child(1){
+        margin: 0;
+    }
+    .contenedor-cotizaciones .opciones-cotizaciones form .col select, .contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col{
+        font-size: 1rem;
+    }.contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col{
+        padding: 0px 5px;
+    }.contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col input{
+        font-size: 1rem;
+    }.contenedor-cotizaciones .opciones-cotizaciones form .col .inner-col input:focus{
+        outline: none;
+    }
+    .contenedor-cotizaciones .opciones-cotizaciones form .col #btn-cotizacion, 
+    .contenedor-cotizaciones .opciones-cotizaciones form .col #btn-cotizacion-mas{
+        margin: 0 auto;
+    }
+/*#### Fin Cotizacion ####*/
+
+/*#### Socios ####*/
+.nts-logos{
+    padding: 10px 10px;
+    flex-wrap: wrap;
+}
+.nts-logos-item{
+    margin: 5px 20px;
+}
+.nts-logos-item:nth-child(1){
+    height: 35px;
+}.nts-logos-item:nth-child(2){
+    height: 65px;
+}.nts-logos-item:nth-child(3){
+    height: 60px;
+}
+/*#### Fin socios ####*/
+/*#### Acerca de ####*/
+.section-about{
+    padding:0 10px;
+}
+.about-cont{
+    flex-direction: column-reverse;
+}
+.about-cont img{
+    width: 100%;
+    margin-right: 0px;
+}
+.about-cont-inner{
+    padding: 10px;
+}
+.about-cont-inner p{
+    width: 100%;
+    text-align: justify;
+    font-size:0.9rem;
+}
+.about-cont-inner h1{
+    font-size: 2rem;
+}
+/*### fin Acerca de ####*/
+/*### Contacto ####*/
+.contacto {
+    padding: 75px 10px;
+}
+.contacto h1{
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.contacto .map-contenedor{
+    width: 100%;
+}
+.contacto .map-contenedor .mapa{
+    width: 100%;
+}
+.contacto .form-contenedor{
+    width: 100%;
+    margin-right: 0px;
+}
+.contacto .form-contenedor p{
+    font-size: 1rem;
+}
+
+.contacto input:focus{
+    outline: none;
+}
+
+.contacto #btn-send{
+   margin-bottom: 25px;
+}
+/*#### fin contacto ####*/
+/*#### Footer ####*/
+footer{
+    width: 100%;
+    background: #151519;
+}
+.cont-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title-footer{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Marck Script';
+}
+.text-left, .text-rigth{
+    padding: 20px 30px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.9rem; 
+    line-height: 1.4rem;
+}.text-rigth{
+    padding-top: 5px;
+}
+.text-left p, .text-rigth p {
+    padding: 10px 0
+}
+.text-center{
+    display: none;
+}
+.nav-footer {
+    padding: 25px 30px;
+    flex-direction: column-reverse;
+    display: flex;
+}
+.nav-footer span {
+    color: #ffffff7f;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align:center;
+}
+.nav-footer .nav-menu-footer .menu{
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.nav-footer .nav-menu-footer .menu li a{
+    padding: 20px 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.nav-footer .nav-menu-footer .menu li a:hover{
+    color:#fff;
+}
+/*#### fin footer ####*/
+/*#### estilos Woocommerce ####*/
+.woocommerce-breadcrumb{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 115px;
+    letter-spacing: 0;
+    font-size: 0.7rem;
+}
+.woocommerce-breadcrumb a{
+    letter-spacing: 0;
+    font-size: 0.7rem;
+}
+}

@@ -1,0 +1,59 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .pi-custom-button{
+     width:100%;
+     display:block !important;
+     margin-top:10px !important;
+     margin-bottom:10px !important;
+     text-align: center;
+     cursor:pointer;
+ }
+
+ .pi-thumbnail img{
+    max-width:60px !important;
+ }
+
+ .pi-quantity{
+     max-width:70px;
+     text-align: center;
+ }
+
+ #pi-loading{
+     display:block;
+     width:100%;
+     height:100%;
+     position:absolute;
+     top:0;
+     left:0;
+     background:url(../img/loading.svg) rgba(0,0,0,0.2) no-repeat center center ;
+ }
+
+ .pi-attribute-label{
+     text-transform: capitalize;
+ }
+
+ .pi-row{
+     display:block;
+     padding:10px 0;
+ }
+
+ .pi-col-12{
+     width:100%;
+ }
+
+ .pi-form-control{
+     padding:10px;
+     width:100%;
+     display:block;
+     border:1px solid #ccc;
+ }
+
+ .pi-btn{
+     padding:10px 20px;
+     background:#ee6443;
+     color:#fff;
+     border:0px;
+     cursor:pointer;
+ }

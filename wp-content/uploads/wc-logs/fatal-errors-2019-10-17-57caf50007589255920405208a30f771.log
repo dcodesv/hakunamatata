@@ -1,0 +1,4 @@
+2019-10-17T03:10:14+00:00 CRITICAL syntax error, unexpected ''https://maps.googleapis.com/m' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' en C:\laragon\www\hakunamatata\wp-content\themes\hakuna-matata\functions.php en la línea 7
+
+2019-10-17T05:42:04+00:00 CRITICAL syntax error, unexpected ')' en C:\laragon\www\hakunamatata\wp-content\themes\hakuna-matata\functions.php en la línea 22
+
