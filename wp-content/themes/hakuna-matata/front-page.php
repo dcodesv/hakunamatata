@@ -82,7 +82,7 @@
     </div>
 </section>
 
-<section class="contacto">
+<section id="contacto" class="contacto">
     <h1>Contacta con Nosotros</h1>
     <div class="form-contenedor">
         <form action="">
